@@ -8,31 +8,26 @@ public class Main
         AthleteCreationInjector injector;
         Processor app;
 
-        //(VV) inside a TACI injector I'll need to create.
-        //     ^^inside of THAT TrackAthleteCreationInjector...I'll pull in my processor, and then use construcor injection to pull in MyApplication.
-        //TrackAthleteCreationInjector implements AthleteCreationInjector
-
         // Create a Track Athlete
         injector = new TrackAthleteCreationInjector();
         app = injector.getProcess();
         app.display("Track");
 
-        //HockeyAthleteCreationInjector implements AthleteCreationInjector
         // Create a Hockey Athlete
-//        injector = new HockeyAthleteCreationInjector();
-//        app = injector.getProcess();
-//        app.displayAthlete();
+        injector = new HockeyAthleteCreationInjector();
+        app = injector.getProcess();
+        app.display("Hockey");
 
 
         // Create a Rugby Athlete
-//        injector = new RugbyAthleteCreationInjector();
-//        app = injector.getProcess();
-//        app.displayAthlete();
+        injector = new RugbyAthleteCreationInjector();
+        app = injector.getProcess();
+        app.display("Rugby");
 
         // Create a Baseball Athlete
-//        injector = new BaseballAthleteCreationInjector();
-//        app = injector.getProcess();
-//        app.displayAthlete();
+        injector = new BaseballAthleteCreationInjector();
+        app = injector.getProcess();
+        app.display("Baseball");
 
     }
 }
