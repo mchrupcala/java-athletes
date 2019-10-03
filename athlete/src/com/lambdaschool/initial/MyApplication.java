@@ -11,3 +11,5 @@ public class MyApplication
         System.out.println("************\n");
     }
 }
+
+//Business Rules
